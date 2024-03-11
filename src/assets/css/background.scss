@@ -1,0 +1,39 @@
+@import "../../variables.scss";
+
+body {
+    .bg-primary {
+        background-color: $color-primary !important;
+    }
+
+    .bg-secondary {
+        background-color: $color-secondary !important;
+    }
+
+    .bg-success {
+        background-color: $color-success !important;
+    }
+
+    .bg-danger {
+        background-color: $color-danger !important;
+    }
+
+    .bg-warning {
+        background-color: $color-warning !important;
+    }
+
+    .bg-info {
+        background-color: $color-info !important;
+    }
+
+    .bg-light {
+        background-color: $color-light !important;
+    }
+
+    .bg-dark {
+        background-color: $color-dark !important;
+    }
+
+    .bg-white {
+        background-color: $color-white !important;
+    }
+}

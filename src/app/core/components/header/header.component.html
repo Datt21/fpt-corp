@@ -1,0 +1,206 @@
+<nav
+  class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
+>
+  <div
+    class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4"
+  >
+    <a
+      class="flex items-center space-x-3 rtl:space-x-reverse"
+    >
+      <img
+        src="../../../../assets/images/logo.png"
+        class="h-8 w-20 object-fill md:w-full"
+        alt="Flowbite Logo"
+      />
+    </a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <button
+      type="button"
+      class="text-white bg-[#E95B0B] hover:bg-amber-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center me-2"
+      (click)="showDialog()"
+    >
+      <svg
+        class="w-3.5 h-3.5 me-2"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 18 21"
+      >
+        <path
+          d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"
+        />
+      </svg>
+      Liên hệ ngay!
+    </button>
+      <button
+        data-collapse-toggle="navbar-sticky"
+        type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+        aria-controls="navbar-sticky"
+        aria-expanded="false"
+        (click)="toggleMenu()">
+      
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="w-5 h-5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 17 14"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="items-center justify-between w-full md:flex md-screen md:order-1"
+      id="navbar-sticky"
+      *ngIf="hiddenMd"
+    >
+      <ul
+        class="flex flex-col p-4 px-6 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white"
+      >
+        <li>
+          <a
+            href="#"
+            class="block py-3 px-3 sm:text-white bg-[#E95B0B] rounded md:bg-transparent md:text-[#E95B0B] md:p-0 md:text-lg md:font-bold"
+            aria-current="page"
+            >Trang Chủ</a
+          >
+        </li>
+        <li>
+          <a
+            href="#product_special"
+            class="block py-3 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#E95B0B] md:p-0 md:text-lg md:font-bold md:text-gray-900"
+            >Giới Thiệu</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block py-3 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#E95B0B] md:p-0 md:text-lg md:font-bold md:text-gray-900"
+            >Sản Phẩm</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#E95B0B] md:p-0 md:text-lg md:font-bold"
+            >Liên Hệ</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div
+      class="items-center justify-between w-full md:flex md-screen md:order-1"
+      id="navbar-sticky"
+      *ngIf="hiddenSm"
+    >
+      <ul
+        class="flex flex-col p-4 px-6 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white"
+      >
+        <li>
+          <a
+            href="#"
+            class="block py-3 px-3 sm:text-white bg-[#E95B0B] rounded md:bg-transparent md:text-[#E95B0B] md:p-0 md:text-lg md:font-bold"
+            aria-current="page"
+            >Trang Chủ</a
+          >
+        </li>
+        <li>
+          <a
+            href="#product_special"
+            class="block py-3 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#E95B0B] md:p-0 md:text-lg md:font-bold md:text-gray-900"
+            >Giới Thiệu</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block py-3 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#E95B0B] md:p-0 md:text-lg md:font-bold md:text-gray-900"
+            >Sản Phẩm</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#E95B0B] md:p-0 md:text-lg md:font-bold"
+            >Liên Hệ</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div [formGroup]="form" class="card flex justify-content-center">
+  <p-dialog [(visible)]="visible">
+    <ng-template pTemplate="headless">
+      <div
+        class="flex flex-col px-8 py-5 gap-4"
+        style="border-radius: 12px; background-color: #f2f4f4"
+      >
+        <div class="font-medium font-medium">
+          Để lại thông tin để được tư vấn miễn phí !
+        </div>
+        <div class="">
+          <label for="username" class="block font-medium text-gray-700"
+            >Họ Tên</label
+          >
+          <input
+            pInputText
+            style="border-radius: 10px"
+            class="w-full bg-white-alpha-20 border-none p-3 text-primary-50"
+            formControlName="name"
+          />
+        </div>
+
+        <div class="">
+          <label for="username" class="block font-medium text-gray-700"
+            >Email</label
+          >
+          <input
+            pInputText
+            style="border-radius: 10px"
+            class="w-full bg-white-alpha-20 border-none p-3 text-primary-50"
+            formControlName="email"
+          />
+        </div>
+        <div class="">
+          <label for="password" class="block text-gray-700 font-medium"
+            >Số điện thoại</label
+          >
+          <input
+            pInputText
+            style="border-radius: 10px"
+            class="w-full bg-white border-1 border-gray-300 p-3 text-primary-50 round"
+            formControlName="phone"
+          />
+        </div>
+        <div class="flex align-items-center gap-2 font-medium">
+          <p-button
+            label="Hủy"
+            (click)="closeDialog()"
+            [text]="true"
+            styleClass="w-full py-2 text-gray-700 border-1 bg-[#ebebeb] border-white-alpha-30 hover:bg-white-alpha-10 font-medium"
+            class="w-full"
+          ></p-button>
+          <p-button
+            label="Gửi"
+            [text]="true"
+            styleClass="w-full py-2 text-white border-1 bg-[#6875f5] border-white-alpha-30 hover:bg-white-alpha-10 font-medium"
+            class="w-full"
+            [disabled]="!this.form.value?.phone"
+            (click)="submitForm()"
+          ></p-button>
+        </div>
+      </div>
+    </ng-template>
+  </p-dialog>
+</div>
+

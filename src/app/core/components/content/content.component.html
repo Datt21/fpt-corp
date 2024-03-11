@@ -1,0 +1,984 @@
+<div class="card md:mt-10 lg:mt-0" [ngClass]="isSmScreen ? 'mt-20' : ''">
+  <p-galleria
+    [value]="images"
+    [numVisible]="5"
+    [circular]="true"
+    [responsiveOptions]="responsiveOptions"
+    [showItemNavigators]="true"
+    [showThumbnails]="false"
+    [containerStyle]="{ 'max-width': '100%', 'min-height': '240px' }"
+  >
+    <ng-template pTemplate="item" let-item>
+      <img
+        [src]="item.itemImageSrc"
+        style="
+          width: 100%;
+          min-height: 240px;
+          object-fit: cover;
+          display: block;
+        "
+      />
+    </ng-template>
+  </p-galleria>
+</div>
+<div class="product-card max-w mx-auto mt-10">
+  <section
+    class="text-center mb-3 font-bold leading-none tracking-tight text-gray-600 text-lg md:text-2xl font-bold"
+    id=""
+  >
+    <h3>Thương hiệu nhà thông minh từ FPT</h3>
+  </section>
+  <section
+    class="text-center text-lg mb-4 font-bold leading-none tracking-tight text-gray-900 md:text-4xl md:font-semibold"
+    id="product_special"
+  >
+    <h1>Sản Phẩm Nổi Bật</h1>
+  </section>
+</div>
+<!-- San pham noi bat -->
+<div class="py-6 px-4 sm:p-6 md:py-10">
+  <div
+    class="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-screen-2xl lg:gap-x-20 lg:grid-cols-2"
+  >
+    <div
+      class="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1"
+    >
+      <h1
+        class="mt-1 text-lg font-bold text-slate-500 md:text-3xl lg:text-slate-900"
+        [ngClass]="isSmScreen ? 'text-white' : ''"
+      >
+        Cuộc sống hiện đại hơn với FPT Life
+      </h1>
+      <p
+        class="text-sm leading-4 font-medium text-slate-300 sm:text-slate-500 md:text-lg"
+        [ngClass]="isSmScreen ? 'text-white' : ''"
+      >
+        FPT Play Box S
+      </p>
+    </div>
+    <div
+      class="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0"
+    >
+      <img
+        src="../../../../assets/images/tv-solution-2 (1).png"
+        alt=""
+        class="w-full h-80 object-cover rounded-lg sm:h-52 sm:col-span-2 lg:col-span-full lg:h-auto"
+        loading="lazy"
+      />
+      <img
+        src="../../../../assets/images/1684406592-PR-FSH-5-2022_600X375-2.jpg"
+        alt=""
+        class="hidden w-full h-72 object-cover rounded-lg sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-42"
+        loading="lazy"
+      />
+      <img
+        src="../../../../assets/images/1668581854-Group-673.png"
+        alt=""
+        class="hidden w-full h-72 object-cover rounded-lg md:block lg:row-start-2 lg:col-span-2 lg:h-42"
+        loading="lazy"
+      />
+    </div>
+    <dl
+      class="mt-4 text-xs font-medium flex items-center row-start-2 sm:mt-1 sm:row-start-3 md:mt-2.5 lg:row-start-2"
+    >
+      <dt class="sr-only">Reviews</dt>
+      <dd class="text-indigo-600 flex items-center">
+        <svg
+          width="24"
+          height="24"
+          fill="none"
+          aria-hidden="true"
+          class="mr-1 stroke-orange-500 dark:stroke-indigo-500"
+        >
+          <path
+            d="m12 5 2 5h5l-4 4 2.103 5L12 16l-5.103 3L9 14l-4-4h5l2-5Z"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <span class="mt-1 text-orange-500"
+          >4.89 <span class="text-slate-400 font-normal">(128)</span></span
+        >
+      </dd>
+      <dt class="sr-only">Location</dt>
+      <dd class="flex items-center">
+        <svg
+          width="2"
+          height="2"
+          aria-hidden="true"
+          fill="currentColor"
+          class="mx-3 text-slate-300"
+        >
+          <circle cx="1" cy="1" r="1" />
+        </svg>
+        <svg
+          width="24"
+          height="24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="mr-1 text-slate-400 dark:text-slate-500"
+          aria-hidden="true"
+        >
+          <path
+            d="M18 11.034C18 14.897 12 19 12 19s-6-4.103-6-7.966C6 7.655 8.819 5 12 5s6 2.655 6 6.034Z"
+          />
+          <path d="M14 11a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" />
+        </svg>
+        Fptsmarthome, Hà Nội
+      </dd>
+    </dl>
+    <div
+      class="mt-4 col-start-1 row-start-3 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-3 lg:row-end-4"
+    >
+      <button
+        type="button"
+        class="text-white bg-[#E95B0B] hover:bg-amber-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center me-2"
+        (click)="showDialogPopup()"
+      >
+        <svg
+          class="w-3.5 h-3.5 me-2"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 18 21"
+        >
+          <path
+            d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"
+          />
+        </svg>
+        Liên hệ ngay!
+      </button>
+    </div>
+    <div
+      class="mt-4 text-medium text-lg leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1"
+    >
+      Giải trí thả ga với những ứng dụng yêu thích của bạn hoàn toàn bằng giọng
+      nói.Mang cả vũ trụ điện ảnh trên khắp Thế Giới đến ngay tại ngôi nhà thân
+      yêu của bạn.Ứng dụng mua sắm trực tuyến trên TV đầu tiên tại Việt Nam,
+      khiến việc mua sắm tại nhà trở nên dễ dàng hơn bao giờ hết. Các khóa học
+      cực kỳ bổ ích từ học tập, sức khỏe cho đến đời sống, kỹ năng.
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-5 md:mt-10">
+        <div *ngFor="let item of FeaturedProducts">
+          <img
+            class="h-32 max-w-full rounded-lg object-fill"
+            [src]="item?.urlImg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Chi tiet san pham -->
+<div class="product-card max-w mx-auto mt-10">
+  <section
+    class="text-center mb-3 font-bold leading-none tracking-tight text-gray-600 text-lg md:text-2xl font-bold"
+    id=""
+  >
+    <h3>Sản phẩm - Giải pháp - Căn hộ mẫu</h3>
+  </section>
+  <section
+    class="text-center text-lg mb-4 font-bold leading-none tracking-tight text-gray-900 md:text-4xl md:font-semibold"
+    id="product_special"
+  >
+    <h1>Sản Phẩm Của Chúng Tôi</h1>
+  </section>
+</div>
+<!-- Product Tab -->
+<div class="lg:max-w-screen-2xl mx-auto mt-10 px-4">
+  <ul
+    class="grid grid-flow-col text-center text-gray-500 bg-gray-100 rounded-lg p-1 tabs"
+  >
+    <li
+      (click)="selectTab(0)"
+      [class.active]="tab === 0"
+      class="flex justify-center py-4 text-medium md:text-lg cursor-pointer"
+    >
+      <div class="flex justify-center align-items-center">
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.9 3C3.9 3 3 3.8 3 4.9V9c0 1 .8 1.9 1.9 1.9H9c1 0 1.9-.8 1.9-1.9V5c0-1-.8-1.9-1.9-1.9H5Zm10 0c-1 0-1.9.8-1.9 1.9V9c0 1 .8 1.9 1.9 1.9H19c1 0 1.9-.8 1.9-1.9V5c0-1-.8-1.9-1.9-1.9h-4Zm-10 10c-1 0-1.9.8-1.9 1.9V19c0 1 .8 1.9 1.9 1.9H9c1 0 1.9-.8 1.9-1.9v-4c0-1-.8-1.9-1.9-1.9H5Zm10 0c-1 0-1.9.8-1.9 1.9V19c0 1 .8 1.9 1.9 1.9H19c1 0 1.9-.8 1.9-1.9v-4c0-1-.8-1.9-1.9-1.9h-4Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <p class="ml-2">Sản phẩm</p>
+      </div>
+    </li>
+    <li
+      (click)="selectTab(1)"
+      [class.active]="tab === 1"
+      class="flex justify-center text-medium md:text-lg py-4 cursor-pointer"
+    >
+      <div class="flex justify-center align-items-center">
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M11.3 3.3a1 1 0 0 1 1.4 0l6 6 2 2a1 1 0 0 1-1.4 1.4l-.3-.3V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3c0 .6-.4 1-1 1H7a2 2 0 0 1-2-2v-6.6l-.3.3a1 1 0 0 1-1.4-1.4l2-2 6-6Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <p class="ml-2">Căn hộ mẫu</p>
+      </div>
+    </li>
+  </ul>
+  <div
+    class="shadow-md border border-gray-100 font-light p-3 rounded text-gray-500 bg-gray-100 mt-6 products"
+  >
+    <!-- tab product detail -->
+    <div
+      *ngIf="tab === 0"
+      class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4"
+    >
+      <div *ngFor="let item of List_Product; let i = index">
+        <div class="flex flex-col justify-center">
+          <div
+            class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg w-full md:max-w-3xl mx-auto border border-white bg-white"
+          >
+            <div class="w-full md:w-1/3 bg-white grid place-items-center">
+              <img
+                [src]="item?.imgUrl"
+                alt="tailwind logo"
+                class="rounded-xl"
+              />
+            </div>
+            <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
+              <div class="flex justify-between item-center">
+                <p class="text-gray-500 font-medium hidden md:block">
+                  {{ item?.type }}
+                </p>
+                <div class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-yellow-500"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <p class="text-gray-600 font-bold text-sm ml-1">
+                    {{ item?.rate }}
+                    <span class="text-gray-500 font-normal">{{
+                      item?.reviewers
+                    }}</span>
+                  </p>
+                </div>
+                <div class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-pink-500"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="bg-gray-200 px-3 py-1 rounded-full text-xs font-medium text-gray-800 hidden md:block"
+                >
+                  {{ item?.status }}
+                </div>
+              </div>
+              <h3 class="font-black text-gray-800 md:text-xl text-lg">
+                {{ item?.name }}
+              </h3>
+              <p class="md:text-lg text-gray-700 text-base">
+                {{ item?.description }}
+              </p>
+              <div class="flex justify-between align-items-center">
+                <p class="text-lg font-black text-gray-800">
+                  {{ item?.price }}
+                </p>
+                <button
+                  type="button"
+                  class="text-gray-900 bg-white hover:bg-amber-600 border border-solid border-gray-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center me-2"
+                  (click)="showDialog(i)"
+                >
+                  Xem thêm
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p-dialog
+          [header]="item?.name"
+          [(visible)]="visible[i]"
+          [modal]="true"
+          [draggable]="false"
+          [resizable]="false"
+          styleClass="responsive"
+        >
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <img [src]="item?.imgUrlPopup" class="rounded-lg" alt="" />
+            <div class="grid grid-cols-1 gap-4">
+              <div class="flex flex-col rounded-lg bg-[#fff] p-4">
+                <div *ngFor="let item of item?.detail; let i = index">
+                  <div class="flex justify-between mt-6">
+                    <label
+                      for=""
+                      class="text-[14px] lg:text-[16px] font-medium"
+                      >{{ item?.label }}</label
+                    >
+                    <p>{{ item?.value }}</p>
+                  </div>
+                  <hr />
+                </div>
+              </div>
+              <div class="rounded-lg bg-[#fff] text-center">
+                <p class="mt-4 font-bold text-xl">{{ item?.name }}</p>
+                <span class="mr-4">Thương hiệu: {{ item?.branch }}</span>
+                <span>Mã: {{ item?.code }}</span>
+                <div class="p-6 pt-0 mt-4">
+                  <button
+                    class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+                    type="button"
+                    (click)="showDialogPopup()"
+                  >
+                    Liên hệ ngay
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-4 mt-4">
+            <h3 class="mb-2 font-bold text-xl">
+              {{ item?.title }}
+            </h3>
+            <p class="mb-2 text-lg">
+              {{ item?.content_1 }}
+            </p>
+            <p class="text-lg">
+              {{ item?.content_2 }}
+            </p>
+          </div>
+        </p-dialog>
+      </div>
+    </div>
+
+    <!-- tab house template -->
+    <div
+      *ngIf="tab === 1"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+    >
+      <div *ngFor="let item of SamplesApartment; let i = index">
+        <div
+          class="relative grid h-[24rem] md:h-[30rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700"
+        >
+          <div
+            class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-cover bg-clip-border bg-center text-gray-700 shadow-none"
+          >
+            <img [src]="item?.urlImg" alt="" class="h-full" />
+            <div
+              class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"
+            ></div>
+          </div>
+          <div class="relative p-6 px-6 py-14 md:px-12">
+            <h2
+              class="mb-6 block font-sans text-xl font-medium leading-[1.5] tracking-normal text-white antialiased"
+            >
+              {{ item?.title }}
+            </h2>
+            <div class="z-999">
+              <button
+                class="align-middle select-none font-sans font-bold text-center uppercase transition-all antialiased tracking-normal text-xs py-3 px-6 bg-gray-100 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-gray-700 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+                type="button"
+                (click)="showDialogPopup()"
+              >
+                Tìm hiểu thêm
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Giai phap -->
+<div class="product-card max-w mx-auto mt-16">
+  <section
+    class="text-center mb-3 font-bold leading-none tracking-tight text-gray-600 text-lg md:text-2xl font-bold"
+  >
+    <h3>Giải Pháp Nhà Thông Minh</h3>
+  </section>
+  <section
+    class="text-center text-lg mb-4 font-bold leading-none tracking-tight text-gray-900 md:text-4xl md:font-semibold"
+  >
+    <h1>Những giải pháp dành riêng cho bạn</h1>
+  </section>
+</div>
+<!-- Product Tab -->
+<div class="lg:max-w-screen-2xl mx-auto mt-10 px-4">
+  <ul
+    class="grid grid-flow-col text-center text-gray-500 bg-gray-100 rounded-lg p-1 tabs"
+  >
+    <li class="flex justify-center py-4 text-medium md:text-lg cursor-pointer">
+      <div class="flex justify-center align-items-center">
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.9 3C3.9 3 3 3.8 3 4.9V9c0 1 .8 1.9 1.9 1.9H9c1 0 1.9-.8 1.9-1.9V5c0-1-.8-1.9-1.9-1.9H5Zm10 0c-1 0-1.9.8-1.9 1.9V9c0 1 .8 1.9 1.9 1.9H19c1 0 1.9-.8 1.9-1.9V5c0-1-.8-1.9-1.9-1.9h-4Zm-10 10c-1 0-1.9.8-1.9 1.9V19c0 1 .8 1.9 1.9 1.9H9c1 0 1.9-.8 1.9-1.9v-4c0-1-.8-1.9-1.9-1.9H5Zm10 0c-1 0-1.9.8-1.9 1.9V19c0 1 .8 1.9 1.9 1.9H19c1 0 1.9-.8 1.9-1.9v-4c0-1-.8-1.9-1.9-1.9h-4Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <p class="ml-2">Giải pháp</p>
+      </div>
+    </li>
+  </ul>
+  <div
+    class="shadow-md border border-gray-100 font-light p-3 rounded text-gray-500 bg-gray-100 mt-6 products"
+  >
+    <!-- tab product detail -->
+    <div class="grid grid-cols-1 gap-4">
+      <p-panel
+        header="Giải pháp điều khiển"
+        [collapsed]="false"
+        [toggleable]="true"
+      >
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="h-auto w-full rounded-lg object-fill"
+              src="../../../../assets/images/gp_dk.png"
+              alt=""
+            />
+          </div>
+          <div class="grid grid-cols-4 gap-4">
+            <div>
+              <img
+                class="h-auto max-w-full rounded-lg"
+                src="../../../../assets/images/gp_mo_rem.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-auto max-w-full rounded-lg"
+                src="../../../../assets/images/gp_dk_dien.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-auto max-w-full rounded-lg"
+                src="../../../../assets/images/gp_ks_nhiet_doam.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-auto max-w-full rounded-lg"
+                src="../../../../assets/images/gp_tuoi_cay.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="grid lg:grid-cols-4 gap-4 grid-cols-1">
+            <div class="bg-[#f5f5f7] p-3 rounded-lg">
+              <p class="text-medium font-medium text-lg text-gray-800">
+                Điều khiển Rèm thông minh bằng giọng nói
+              </p>
+              <p class="text-base mt-2 text-gray-500">
+                Dễ dàng điều khiển Rèm từ xa thông qua điện thoại hay giọng nói
+                Tiếng Việt
+              </p>
+            </div>
+            <div class="bg-[#f5f5f7] p-3 rounded-lg">
+              <p class="text-medium font-medium text-lg text-gray-800">
+                Điều khiển thiết bị Điện và Gia Dụng tại nhà
+              </p>
+              <p class="text-base mt-2 text-gray-500">
+                rang bị ổ cẳm thông minh giúp tắt bật/ hẹn giờ các thiết bị hoạt
+                động mọi lúc
+              </p>
+            </div>
+            <div class="bg-[#f5f5f7] p-3 rounded-lg">
+              <p class="text-medium font-medium text-lg text-gray-800">
+                Tự động kiểm soát độ ẩm, nhiệt độ phòng
+              </p>
+              <p class="text-base mt-2 text-gray-500">
+                Hệ thống sẽ nhận diện trạng thái điều hoà thích hợp và tự động
+                cân bằng giúp bạn
+              </p>
+            </div>
+            <div class="bg-[#f5f5f7] p-3 rounded-lg">
+              <p class="text-medium font-medium text-lg text-gray-800">
+                Chế độ tưới cây tự động
+              </p>
+              <p class="text-base mt-2 text-gray-500">
+                Tiết kiệm thời gian hơn khi chúng ta có thể lên lịch tưới cây tự
+                động hằng ngày
+              </p>
+            </div>
+          </div>
+        </div>
+      </p-panel>
+      <p-panel
+        header="Giải pháp chiếu sáng"
+        [collapsed]="true"
+        [toggleable]="true"
+      >
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="h-auto w-full rounded-lg"
+              src="../../../../assets/images/gp_ck_bgg.png"
+              alt=""
+            />
+          </div>
+          <div class="grid grid-cols-3 gap-4">
+            <div>
+              <img
+                class="h-auto max-w-full rounded-lg"
+                src="../../../../assets/images/gp_ck_settime.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-auto max-w-full rounded-lg"
+                src="../../../../assets/images/gp_ck_den.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-auto max-w-full rounded-lg"
+                src="../../../../assets/images/gp.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="grid lg:grid-cols-3 gap-4 grid-cols-1">
+            <div class="bg-[#f5f5f7] p-3 rounded-lg">
+              <p class="text-medium font-medium text-lg text-gray-800">
+                Hẹn giờ linh hoạt
+              </p>
+              <p class="text-base mt-2 text-gray-500">
+                Tính năng lập lịch giúp tắt bật các thiết bị theo thời gian đặt
+                sẵn
+              </p>
+            </div>
+            <div class="bg-[#f5f5f7] p-3 rounded-lg">
+              <p class="text-medium font-medium text-lg text-gray-800">
+                Tắt/ bật đèn linh hoạt theo nhóm hoặc riêng lẻ
+              </p>
+              <p class="text-base mt-2 text-gray-500">
+                Người dùng có thể dễ dàng điều khiển tắt bật đồng thời nhiều đèn
+                ở phòng khách thông qua giọng nói. Giúp tiết kiệm điện năng và
+                tiện lợi hơn khi điều khiển không cần phụ thuộc hạ tầng điện.
+              </p>
+            </div>
+            <div class="bg-[#f5f5f7] p-3 rounded-lg">
+              <p class="text-medium font-medium text-lg text-gray-800">
+                Điều chỉnh cường độ ánh sáng và màu sắc
+              </p>
+              <p class="text-base mt-2 text-gray-500">
+                Tùy chỉnh cường độ hay màu sắc ánh sáng theo tâm trạng vui buồn
+                hoặc ngữ cảnh để thư giãn, sinh hoạt với hệ màu RGB lên tới 16
+                triệu màu
+              </p>
+            </div>
+          </div>
+        </div>
+      </p-panel>
+      <p-panel
+        header="Giải pháp an ninh"
+        [collapsed]="true"
+        [toggleable]="true"
+      >
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="h-auto w-full rounded-lg"
+              src="../../../../assets/images/gp_an_bg.png"
+              alt=""
+            />
+          </div>
+          <div class="grid grid-cols-4 gap-4">
+            <div>
+              <img
+                class="max-h-[210px] max-w-full rounded-lg"
+                src="../../../../assets/images/gp_an_trom.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="max-h-[210px] max-w-full rounded-lg"
+                src="../../../../assets/images/gp_an_lock.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="max-h-[210px] w-full rounded-lg object-cover"
+                src="../../../../assets/images/gp_an_bam.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="max-h-[210px] w-full rounded-lg object-cover"
+                src="../../../../assets/images/gp_an_cam.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="grid lg:grid-cols-4 gap-4 grid-cols-1">
+            <div class="bg-[#f5f5f7] p-3 rounded-lg">
+              <p class="text-medium font-medium text-lg text-gray-800">
+                Camera SE phát hiện người và gửi cảnh báo
+              </p>
+              <p class="text-base mt-2 text-gray-500">
+                Phát hiện người đột nhập, hỗ trợ phân biệt chuyển động của người
+                và vật để gửi đi cảnh báo chính xác tới điện thoại... giúp kịp
+                thời phát hiện xâm nhập trái phép
+              </p>
+            </div>
+            <div class="bg-[#f5f5f7] p-3 rounded-lg">
+              <p class="text-medium font-medium text-lg text-gray-800">
+                Khoá cửa thông minh
+              </p>
+              <p class="text-base mt-2 text-gray-500">
+                Mở cửa từ xa, nhanh và tiện lợi dù bạn ở bất cứ đâu. Quản lý và
+                kiểm tra việc ra vào hiệu quả.
+              </p>
+            </div>
+            <div class="bg-[#f5f5f7] p-3 rounded-lg">
+              <p class="text-medium font-medium text-lg text-gray-800">
+                Nút bấm khẩn cấp
+              </p>
+              <p class="text-base mt-2 text-gray-500">
+                Khi gặp sự cố không muốn bạn có thể sử dụng để được hỗ trợ sớm
+                nhất
+              </p>
+            </div>
+            <div class="bg-[#f5f5f7] p-3 rounded-lg">
+              <p class="text-medium font-medium text-lg text-gray-800">
+                Camera IQ ngoài trời
+              </p>
+              <p class="text-base mt-2 text-gray-500">
+                Giúp quan sát và quản lý bên ngoài ngôi nhà một cách tổng thể
+              </p>
+            </div>
+          </div>
+        </div>
+      </p-panel>
+      <p-panel
+        header="Giải pháp truyền hình"
+        [collapsed]="true"
+        [toggleable]="true"
+      >
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="h-auto w-full rounded-lg"
+              src="../../../../assets/images/gp_th_bg.png"
+              alt=""
+            />
+          </div>
+          <div class="grid grid-cols-4 gap-4">
+            <div>
+              <img
+                class="lg:min-h-[296px] max-w-full rounded-lg object-cover min-h-[62px]"
+                src="../../../../assets/images/gp_th_open.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="lg:min-h-[296px] max-w-full rounded-lg object-cover min-h-[62px]"
+                src="../../../../assets/images/gp_th_buy.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-auto max-w-full rounded-lg"
+                src="../../../../assets/images/gp_th_tv.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-auto max-w-full rounded-lg"
+                src="../../../../assets/images/gp_th_gt.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="grid lg:grid-cols-4 gap-4 grid-cols-1">
+            <div class="bg-[#f5f5f7] p-3 rounded-lg">
+              <p class="text-medium font-medium text-lg text-gray-800">
+                Chuyển kênh, mở phim bằng giọng nói Tiếng Việt
+              </p>
+              <p class="text-base mt-2 text-gray-500">
+                Điều khiển dễ dàng bằng giọng nói mà không cần chạm
+              </p>
+            </div>
+            <div class="bg-[#f5f5f7] p-3 rounded-lg">
+              <p class="text-medium font-medium text-lg text-gray-800">
+                Mua hàng qua TV với Shop Play
+              </p>
+              <p class="text-base mt-2 text-gray-500">
+                Mua sắm trực tuyến ngay tại nhà đơn giản với Shop Play
+              </p>
+            </div>
+            <div class="bg-[#f5f5f7] p-3 rounded-lg">
+              <p class="text-medium font-medium text-lg text-gray-800">
+                UEFA Champions League, HBO, K+
+              </p>
+              <p class="text-base mt-2 text-gray-500">
+                Xem bóng đá thể thao thả ga với các kênh độc quyền chỉ có trên
+                FPT Smart Home
+              </p>
+            </div>
+            <div class="bg-[#f5f5f7] p-3 rounded-lg">
+              <p class="text-medium font-medium text-lg text-gray-800">
+                Kho giải trí đa dạng Yoga, Giáo Dục, Phim
+              </p>
+              <p class="text-base mt-2 text-gray-500">
+                FPT PLay Box S mang cả thế giới tới ngôi nhà bạn
+              </p>
+            </div>
+          </div>
+        </div>
+      </p-panel>
+    </div>
+  </div>
+</div>
+<!-- Nhung cong trinh tieu bieu -->
+<!-- Chi tiet san pham -->
+<div class="product-card lg:max-w-screen-xl mx-auto mt-10 px-4">
+  <section
+    class="text-center mb-3 font-bold leading-none tracking-tight text-gray-600 text-lg md:text-2xl font-bold"
+    id=""
+  >
+    <h1>Những công trình tiêu biểu</h1>
+  </section>
+  <section
+    class="text-center text-sm mb-4 font-medium leading-none tracking-tight text-gray-900 md:text-lg md:font-medium"
+    id="product_special"
+  >
+    <h3>
+      Đồng hành cùng chủ đầu tư từ khâu tư vấn đến hoàn thiện, đội ngũ kĩ sư đã
+      lắp đặt hệ thống thiết bị nhà thông minh FPT Smart Home như ( đèn, công
+      tắc cảm ứng, rèm thông minh, cảm biến...)
+    </h3>
+  </section>
+</div>
+<!-- sample -->
+<div
+  class="grid gap-4 grid-cols-1 md:grid-cols-1 lg:grid-cols-3 mt-5 md:mt-10 lg:max-w-screen-2xl mx-auto px-4"
+>
+  <div *ngFor="let item of Typical_Projects; let i = index">
+    <div
+      class="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl"
+    >
+      <div
+        class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white bg-clip-border rounded-xl"
+      >
+        <img
+          [src]="item?.urlImg"
+          alt="card-image"
+          class="object-cover w-full h-full"
+        />
+      </div>
+      <div class="p-6">
+        <div class="flex flex-col items-start mb-2">
+          <p
+            class="block text-base antialiased font-bold leading-relaxed text-blue-gray-900"
+          >
+            {{ item?.name }}
+          </p>
+          <p
+            class="block text-base antialiased font-medium leading-relaxed text-gray-600"
+          >
+            {{ item?.type }}
+          </p>
+        </div>
+        <hr />
+        <div class="flex justify-center align-items-center mt-3">
+          <div class="flex mr-2">
+            <img
+              src="../../../../assets/images/1668674205-phong-ngu.png"
+              alt=""
+              class="h-8 w-18"
+            />
+            <p class="text-center ml-2 mt-2">{{ item?.room }}</p>
+          </div>
+          <div class="flex mr-2">
+            <img
+              src="../../../../assets/images/1668674215-phong-tam.png"
+              alt=""
+              class="h-8 w-18"
+            />
+            <p class="text-center ml-2 mt-2">{{ item?.bed_room }}</p>
+          </div>
+          <div class="flex">
+            <img
+              src="../../../../assets/images/1668674224-dien-tich.png"
+              alt=""
+              class="h-8 w-18"
+            />
+            <p class="text-center ml-2 mt-2">{{ item?.acreage }}</p>
+          </div>
+        </div>
+        <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-2">
+          <div class="flex text-center">
+            <input
+              checked
+              disabled
+              id="orange-radio_1"
+              type="checkbox"
+              value=""
+              name="colored-radio_1"
+              class="w-4 h-4 rounded text-orange-500 bg-gray-100 border-gray-300 focus:ring-orange-500"
+            />
+            <label class="ml-2">Giải pháp chiếu sáng</label>
+          </div>
+          <div class="flex text-center">
+            <input
+              checked
+              disabled
+              id="orange-radio_2"
+              type="checkbox"
+              value=""
+              name="colored-radio_2"
+              class="w-4 h-4 rounded text-orange-500 bg-gray-100 border-gray-300 focus:ring-orange-500"
+            />
+            <label class="ml-2">Giải pháp điều khiển</label>
+          </div>
+          <div class="flex text-center">
+            <input
+              checked
+              disabled
+              id="orange-radio_3"
+              type="checkbox"
+              value=""
+              name="colored-radio_3"
+              class="w-4 h-4 rounded text-orange-500 bg-gray-100 border-gray-300 focus:ring-orange-500"
+            />
+            <label class="ml-2">Giải pháp an ninh</label>
+          </div>
+          <div class="flex text-center">
+            <input
+              checked
+              disabled
+              id="orange-radio_4"
+              type="checkbox"
+              value=""
+              name="colored-radio_4"
+              class="w-4 h-4 rounded text-orange-500 bg-gray-100 border-gray-300 focus:ring-orange-500"
+            />
+            <label class="ml-2">Giải pháp truyền hình</label>
+          </div>
+        </div>
+      </div>
+      <div class="p-6 pt-0">
+        <button
+          class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+          type="button"
+          (click)="showDialogPopup()"
+        >
+          Liên hệ ngay
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Video -->
+<!-- Popop submit form contact -->
+<div [formGroup]="form" class="card flex justify-content-center">
+  <p-dialog [(visible)]="visible_popup">
+    <ng-template pTemplate="headless">
+      <div
+        class="flex flex-col px-8 py-5 gap-4"
+        style="border-radius: 12px; background-color: #f2f4f4"
+      >
+        <div class="font-medium font-medium">
+          Để lại thông tin để được tư vấn miễn phí !
+        </div>
+        <div class="">
+          <label for="username" class="block font-medium text-gray-700"
+            >Họ Tên</label
+          >
+          <input
+            pInputText
+            style="border-radius: 10px"
+            class="w-full bg-white-alpha-20 border-none p-3 text-primary-50"
+            formControlName="name"
+          />
+        </div>
+
+        <div class="">
+          <label for="username" class="block font-medium text-gray-700"
+            >Email</label
+          >
+          <input
+            pInputText
+            style="border-radius: 10px"
+            class="w-full bg-white-alpha-20 border-none p-3 text-primary-50"
+            formControlName="email"
+          />
+        </div>
+        <div class="">
+          <label for="password" class="block text-gray-700 font-medium"
+            >Số điện thoại</label
+          >
+          <input
+            pInputText
+            style="border-radius: 10px"
+            class="w-full bg-white border-1 border-gray-300 p-3 text-primary-50 round"
+            formControlName="phone"
+          />
+        </div>
+        <div class="flex align-items-center gap-2 font-medium">
+          <p-button
+            label="Hủy"
+            (click)="closeDialog()"
+            [text]="true"
+            styleClass="w-full py-2 text-gray-700 border-1 bg-[#ebebeb] border-white-alpha-30 hover:bg-white-alpha-10 font-medium"
+            class="w-full"
+          ></p-button>
+          <p-button
+            label="Gửi"
+            [text]="true"
+            styleClass="w-full py-2 text-white border-1 bg-[#6875f5] border-white-alpha-30 hover:bg-white-alpha-10 font-medium"
+            class="w-full"
+            [disabled]="!this.form.value?.phone"
+            (click)="submitForm()"
+          ></p-button>
+        </div>
+      </div>
+    </ng-template>
+  </p-dialog>
+</div>

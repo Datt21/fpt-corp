@@ -1,0 +1,49 @@
+.max-w {
+    max-width: 80% !important;
+}
+
+.sample {
+    max-height: 320px !important;
+}
+
+.tabs li.active {
+    background-color: #fff;
+    border-radius: 10px;
+    color: #e95b0b;
+    box-shadow:
+        0 4px 6px -1px rgb(0 0 0 / 0.1),
+        0 2px 4px -2px rgb(0 0 0 / 0.1);
+    cursor: pointer;
+}
+
+:host ::ng-deep .p-component {
+    font-family: "Roboto" !important;
+}
+
+::ng-deep .p-panel .p-panel-header {
+    background: #fff !important;
+    font-size: 18px !important;
+}
+
+::ng-deep .p-dialog .p-dialog-content {
+    background: #f5f5f7 !important;
+}
+
+::ng-deep .p-dialog .p-dialog-header {
+    background: #f5f5f7 !important;
+}
+
+.responsive {
+    color: #e95b0b !important;
+}
+
+::ng-deep .p-dialog .responsive {
+    @media (min-width: 1024px) {
+        width: 70vw !important;
+        height: 36vw !important;
+    }
+    @media (min-width: 1280px) {
+        width: 70vw !important;
+        height: 36vw !important;
+    }
+}

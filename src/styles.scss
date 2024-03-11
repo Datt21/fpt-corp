@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./assets/css/button.scss";
+@import "./assets/css/input.scss";
+@import "./assets/css/table.scss";
+@import "./assets/css/background.scss";
+@import "./assets/css/text.scss";
+@import "variables.scss";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
