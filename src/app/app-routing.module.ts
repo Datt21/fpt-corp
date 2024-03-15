@@ -21,10 +21,6 @@ const routes: Routes = [
     path: 'error',
     component: PageErrorComponent,
   },
-  //   {
-  //     path: 'forbidden',
-  //     component: PagePcForbiddenComponent,
-  //   },
   {
     path: '**',
     component: PageErrorComponent,

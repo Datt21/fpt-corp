@@ -47,3 +47,11 @@
         height: 36vw !important;
     }
 }
+
+::ng-deep .p-galleria .p-galleria-thumbnail-container {
+    background: #f5f5f7 !important;
+}
+
+::ng-deep .p-galleria .p-galleria-item-nav .p-icon-wrapper .p-icon {
+    color: white !important;
+}

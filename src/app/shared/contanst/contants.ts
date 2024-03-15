@@ -111,12 +111,12 @@ export const LIST_ITEM_PRODUCT = [
   {
     title: 'Hands-free Android TV Box đầu tiên trên Thế Giới',
     type: 'Bộ điều khiển',
-    reviewers: '',
+    reviewers: '(1102)',
     rate: ' 4.9',
     status: 'Bán Chạy',
     name: 'FPT Play Box',
     description:
-      ' The best kept secret of The Bahamas is the country’s sheer size and diversity. With 16 major islands, The Bahamas is an unmatched destination',
+      ' Giải trí thả ga với những ứng dụng yêu thích của bạn hoàn toàn bằng giọng nói.Mang cả vũ trụ điện ảnh trên khắp Thế Giới đến ngay tại ngôi nhà thân yêu của bạn...',
     price: '2.190.000 VNĐ',
     imgUrl: '../../../../assets/images/1668670888-Boxx.png',
     imgUrlPopup: '../../../../assets/images/google-voice-control.png',
@@ -146,7 +146,7 @@ export const LIST_ITEM_PRODUCT = [
     status: 'Bán Chạy',
     name: 'Camera an ninh thông minh FPT',
     description:
-      'The best kept secret of The Bahamas is the country’s sheer size and diversity. With 16 major islands, The Bahamas is an unmatched destination',
+      'Tại các hộ gia đình hiện nay, lắp đặt camera trong nhà được xem là lựa chọn thông minh khi không chỉ đảm bảo tính an ninh tối ưu hơn mà còn mang đến hiệu quả..',
     price: '830.000 VNĐ',
     imgUrl: '../../../../assets/images/Screenshot_183.png',
     imgUrlPopup: '../../../../assets/images/1684486559-camera-SE.jpg',
@@ -214,5 +214,256 @@ export const Typical_Projects = [
     room: '3',
     bed_room: '3',
     acreage: '90m2',
+  },
+];
+
+export const LIST_ITEM_PRODUCT_SWITCH = [
+  {
+    title:
+      'Công tắc cửa cuốn thông minh Athena của FPT Smart Home - Sự lựa chọn hoàn hảo cho người tiêu dùng',
+    type: 'Công tắc thông minh',
+    reviewers: '758',
+    rate: ' 4.6',
+    status: 'Bán Chạy',
+    name: 'Công Tắc Cửa Cuốn Thông Minh Athena',
+    description:
+      'Công tắc cửa cuốn thông minh Athena là một sản phẩm tiện ích của FPT Smart Home, được thiết kế để giúp người dùng dễ dàng điều khiển cửa cuốn/ cửa cổng từ bất kỳ đâu...',
+    price: '2.190.000 VNĐ',
+    imgUrl: '../../../../assets/images/cc_d_v.png',
+    imgUrlPopup: '../../../../assets/images/google-voice-control.png',
+    detail: [
+      { label: 'Nguồn cấp', value: '220V/50Hz' },
+      { label: 'Số kênh ngõ ra', value: '4' },
+      { label: 'Nhiệt độ hoạt động', value: '-10°C - 40°C' },
+      { label: 'Chuẩn kết nối', value: 'Bluetooth Mesh' },
+      { label: 'Kích thước (D x R x C)', value: '86 x 86 x 32mm' },
+    ],
+    branch: 'FPT Smart Home',
+    code: 'GSWF012',
+    content_1:
+      'Công tắc cửa cuốn thông minh Athena là một sản phẩm tiện ích của FPT Smart Home, được thiết kế để giúp người dùng dễ dàng điều khiển cửa cuốn/ cửa cổng từ bất kỳ đâu, bất kỳ lúc nào thông qua ứng dụng di động hoặc chạm trực tiếp lên bề mặt công tắc',
+    content_2:
+      'Một trong những lợi ích chính của công tắc cửa cuốn thông minh Athena là khả năng điều khiển từ xa. Bạn có thể mở và đóng cửa từ bất kỳ đâu thông qua ứng dụng di động trên điện thoại hoặc máy tính bảng của mình, người dùng khi về nhà vào lúc trời mưa, không cần phải xuống xe mở cửa cổng, mà chỉ cần ngồi trên xe thao tác mở cửa cổng nhanh gọn.',
+    options: [
+      {
+        label: 'Hình dáng',
+        option: [
+          { name: 'Chữ nhật', key: 0, id: 11 },
+          { name: 'Vuông', key: 1, id: 12 },
+        ],
+        name_control: 'shape',
+      },
+      {
+        label: 'Chọn màu sắc',
+        option: [
+          { name: 'Đen', key: 0, id: 13 },
+          { name: 'Trắng', key: 1, id: 14 },
+        ],
+        name_control: 'color',
+      },
+    ],
+    images: [
+      {
+        index: 0,
+        thumbnailImageSrc: '../../../../assets/images/cc_d_cn.png',
+        detail: { shape: 0, color: 0 },
+      },
+      {
+        index: 1,
+        thumbnailImageSrc: '../../../../assets/images/cc_t_cn.png',
+        detail: { shape: 0, color: 1 },
+      },
+      {
+        index: 2,
+        thumbnailImageSrc: '../../../../assets/images/cc_d_v.png',
+        detail: { shape: 1, color: 0 },
+      },
+      {
+        index: 3,
+        thumbnailImageSrc: '../../../../assets/images/cc_t_v.png',
+        detail: { shape: 1, color: 1 },
+      },
+    ],
+  },
+  {
+    title:
+      'Camera SE FPT – Thiết bị giám sát linh hoạt, hỗ trợ đa góc nhìn, đàm thoại hai chiều',
+    type: 'Công tắc thông minh',
+    reviewers: '(2486)',
+    rate: ' 4.9',
+    status: 'Bán chạy',
+    name: 'Công Tắc Cảm Ứng Athena',
+    description:
+      'Công tắc cảm ứng đến từ thương hiệu nhà thông minh FPT Smart Home với tính linh hoạt, độ nhạy cao cho phép người dùng tối ưu hóa công năng sử dụng...',
+    price: '1.790.000 VNĐ',
+    imgUrl: '../../../../assets/images/ct_1.png',
+    imgUrlPopup: '../../../../assets/images/1684486559-camera-SE.jpg',
+    detail: [
+      { label: 'Điện áp hoạt động', value: '220V/50Hz' },
+      { label: 'Công suất đầu ra tối đa mỗi nút', value: '300W' },
+      { label: 'Màu kính', value: 'Trắng' },
+      { label: 'Vật liệu', value: 'Mặt kính cường lực | Thân vỏ: Nhựa ABS' },
+      { label: 'Tiêu chuẩn chống bụi, chống nước', value: 'IP44' },
+      { label: 'Số lần bật tắt', value: '100,000' },
+      {
+        label: 'Kích thước (DxRxC)',
+        value: '86x86x32 mm',
+      },
+      {
+        label: 'Tiêu chuẩn áp dụng',
+        value: 'TCVN 6480-1/ IEC 60669-1',
+      },
+      {
+        label: 'Chuẩn kết nối',
+        value: 'Bluetooth Mesh',
+      },
+    ],
+    branch: 'FPT Smart Home',
+    code: '20038367',
+    content_1:
+      'Công tắc cảm ứng đến từ thương hiệu nhà thông minh FPT Smart Home với tính linh hoạt, độ nhạy cao cho phép người dùng tối ưu hóa công năng sử dụng trong sinh hoạt hằng ngày.',
+    content_2:
+      'Sở hữu kết cấu sang trọng, hiện đại, khả năng điều khiển các thiết bị chiếu sáng từ xa bằng smartphone hoặc giọng nói Tiếng Việt thông qua bộ điều khiển trung tâm FPT Play Box S. Công tắc cảm ứng có thể xem là thiết bị dẫn đầu xu hướng, mang đến không gian sống chuẩn tiện nghi cho mọi nhà.',
+    options: [
+      {
+        label: 'Hình dáng',
+        option: [
+          { name: 'Chữ nhật', key: 0, id: 0 },
+          { name: 'Vuông', key: 1, id: 1 },
+        ],
+        name_control: 'shape',
+      },
+      {
+        label: 'Chọn màu sắc',
+        option: [
+          { name: 'Đen', key: 0, id: 2 },
+          { name: 'Trắng', key: 1, id: 3 },
+        ],
+        name_control: 'color',
+      },
+      {
+        label: 'Chọn số nút',
+        option: [
+          { name: '1 Nút', key: 0, id: 4 },
+          { name: '2 Nút', key: 1, id: 5 },
+          { name: '3 Nút', key: 2, id: 6 },
+          { name: '4 Nút', key: 3, id: 7 },
+        ],
+        name_control: 'buttonNumber',
+      },
+      {
+        label: 'Chọn công suất',
+        option: [
+          { name: 'Cao', key: 0, id: 8 },
+          { name: 'Thường', key: 1, id: 9 },
+        ],
+        name_control: 'capacity',
+      },
+    ],
+    images: [
+      {
+        index: 0,
+        thumbnailImageSrc: '../../../../assets/images/ct_1.png',
+        detail: { shape: 0, color: 0, buttonNumber: 0, capacity: 0 },
+      },
+      {
+        index: 1,
+        thumbnailImageSrc: '../../../../assets/images/ct_2.png',
+        detail: { shape: 0, color: 0, buttonNumber: 1, capacity: 1 },
+      },
+      {
+        index: 2,
+        thumbnailImageSrc: '../../../../assets/images/ct_3.png',
+        detail: { shape: 0, color: 0, buttonNumber: 2, capacity: 1 },
+      },
+      {
+        index: 3,
+        thumbnailImageSrc: '../../../../assets/images/ct_1_1.png',
+        detail: { shape: 0, color: 0, buttonNumber: 0, capacity: 1 },
+      },
+      {
+        index: 4,
+        thumbnailImageSrc: '../../../../assets/images/ct_b_4.png',
+        detail: { shape: 0, color: 0, buttonNumber: 3, capacity: 1 },
+      },
+      {
+        index: 5,
+        thumbnailImageSrc: '../../../../assets/images/ck_1_w_n.png',
+        detail: { shape: 0, color: 1, buttonNumber: 0, capacity: 0 },
+      },
+      {
+        index: 6,
+        thumbnailImageSrc: '../../../../assets/images/ck_1_w_n.png',
+        detail: { shape: 0, color: 1, buttonNumber: 0, capacity: 1 },
+      },
+      {
+        index: 7,
+        thumbnailImageSrc: '../../../../assets/images/ck_2_w_n.png',
+        detail: { shape: 0, color: 1, buttonNumber: 1, capacity: 1 },
+      },
+      {
+        index: 8,
+        thumbnailImageSrc: '../../../../assets/images/ct_3_t.png',
+        detail: { shape: 0, color: 1, buttonNumber: 2, capacity: 1 },
+      },
+      {
+        index: 9,
+        thumbnailImageSrc: '../../../../assets/images/ct_4_w_n.png',
+        detail: { shape: 0, color: 1, buttonNumber: 3, capacity: 1 },
+      },
+      {
+        index: 10,
+        thumbnailImageSrc: '../../../../assets/images/ct_1_d_v.png',
+        detail: { shape: 1, color: 0, buttonNumber: 0, capacity: 0 },
+      },
+      {
+        index: 11,
+        thumbnailImageSrc: '../../../../assets/images/ct_1_t_v.png',
+        detail: { shape: 1, color: 1, buttonNumber: 0, capacity: 0 },
+      },
+      {
+        index: 12,
+        thumbnailImageSrc: '../../../../assets/images/ct_1_d_v.png',
+        detail: { shape: 1, color: 0, buttonNumber: 0, capacity: 1 },
+      },
+      {
+        index: 13,
+        thumbnailImageSrc: '../../../../assets/images/ct_1_t_v.png',
+        detail: { shape: 1, color: 1, buttonNumber: 0, capacity: 1 },
+      },
+      {
+        index: 14,
+        thumbnailImageSrc: '../../../../assets/images/ct_2_d_v.png',
+        detail: { shape: 1, color: 0, buttonNumber: 1, capacity: 1 },
+      },
+      {
+        index: 15,
+        thumbnailImageSrc: '../../../../assets/images/ct_3_d_v.png',
+        detail: { shape: 1, color: 0, buttonNumber: 2, capacity: 0 },
+      },
+      {
+        index: 16,
+        thumbnailImageSrc: '../../../../assets/images/ct_4_d_v.png',
+        detail: { shape: 1, color: 0, buttonNumber: 3, capacity: 1 },
+      },
+      {
+        index: 17,
+        itemImageSrc: 'https://primeng.org/images/galleria/galleria1.jpg',
+        thumbnailImageSrc: '../../../../assets/images/ct_2_t_v.png',
+        detail: { shape: 1, color: 1, buttonNumber: 1, capacity: 1 },
+      },
+      {
+        index: 18,
+        itemImageSrc: 'https://primeng.org/images/galleria/galleria1.jpg',
+        thumbnailImageSrc: '../../../../assets/images/ct_3_t_v.png',
+        detail: { shape: 1, color: 1, buttonNumber: 2, capacity: 1 },
+      },
+      {
+        index: 19,
+        itemImageSrc: 'https://primeng.org/images/galleria/galleria1.jpg',
+        thumbnailImageSrc: '../../../../assets/images/ct_4_t_v.png',
+        detail: { shape: 1, color: 1, buttonNumber: 3, capacity: 1 },
+      },
+    ],
   },
 ];

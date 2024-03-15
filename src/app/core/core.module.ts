@@ -12,7 +12,8 @@ import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
 import { PanelModule } from 'primeng/panel';
 import { YouTubePlayerModule } from '@angular/youtube-player';
-
+import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { RadioButtonModule } from 'primeng/radiobutton';
 @NgModule({
   declarations: [
     CoreComponent,
@@ -31,6 +32,8 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
     PanelModule,
     ReactiveFormsModule,
     YouTubePlayerModule,
+    NgxPageScrollModule,
+    RadioButtonModule,
   ],
   providers: [],
 })

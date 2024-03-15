@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { HttpErrorInterceptor } from './shared/http/http-error.interceptor';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -18,6 +19,7 @@ import { HttpErrorInterceptor } from './shared/http/http-error.interceptor';
     HttpClientModule,
     CoreModule,
     SharedModule,
+    YouTubePlayerModule,
   ],
   bootstrap: [AppComponent],
   providers: [
