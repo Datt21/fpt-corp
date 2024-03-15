@@ -54,7 +54,7 @@ export class ContentComponent implements OnInit {
 
   playerConfig = {
     controls: 0,
-    mute: 1,
+    mute: 0,
     autoplay: 1,
   };
 
