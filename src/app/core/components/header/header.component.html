@@ -1,128 +1,200 @@
-<nav
-  class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
->
-  <div
-    class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4"
-  >
-    <a *ngIf="hiddenMd" class="flex items-center space-x-3 rtl:space-x-reverse">
-      <img
-        src="../../../../assets/images/logo.png"
-        class="h-8 w-20 object-fill md:w-full"
-        alt="Flowbite Logo"
-      />
-    </a>
-    <a *ngIf="!hiddenMd" href="" class="text-xl text-[#E95B0B] font-semibold"><i>FPT</i>smarthome</a>
-
-    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-      <button
-        type="button"
-        class="text-white bg-[#E95B0B] hover:bg-amber-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center me-2"
-        (click)="showDialog()"
-      >
-        <svg
-          class="w-3.5 h-3.5 me-2"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          viewBox="0 0 18 21"
-        >
-          <path
-            d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"
-          />
-        </svg>
-        Liên hệ ngay!
-      </button>
-      <button
-        data-collapse-toggle="navbar-sticky"
-        type="button"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-        aria-controls="navbar-sticky"
-        aria-expanded="false"
-        (click)="toggleMenu()"
-      >
-        <span class="sr-only">Open main menu</span>
-        <svg
-          class="w-5 h-5"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 17 14"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15"
-          />
-        </svg>
-      </button>
-    </div>
-    <div
-      class="items-center justify-between w-full md:flex md-screen md:order-1"
-      id="navbar-sticky"
-      *ngIf="hiddenMd"
-    >
-      <ul
-        class="flex flex-col p-4 px-6 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white"
-      >
-        <li>
-          <a
-          pageScroll
-            href="#home"
-            class="block py-3 px-3 sm:text-white bg-[#E95B0B] rounded md:bg-transparent md:text-[#E95B0B] md:p-0 md:text-lg md:font-bold"
-            aria-current="page"
-            >Trang Chủ</a
-          >
-        </li>
-        <li>
-          <a
-            pageScroll
-            href="#introduction"
-            class="block py-3 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#E95B0B] md:p-0 md:text-lg md:font-bold md:text-gray-900"
-            >Giới Thiệu</a
-          >
-        </li>
-        <li>
-          <a
-            pageScroll
-            href="#production"
-            class="block py-3 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#E95B0B] md:p-0 md:text-lg md:font-bold md:text-gray-900"
-            >Sản Phẩm</a
-          >
-        </li>
-        <li>
-          <a
-            pageScroll
-            href="#contact"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#E95B0B] md:p-0 md:text-lg md:font-bold"
-            >Liên Hệ</a
-          >
-        </li>
-      </ul>
-    </div>
-    <div
-      class="items-center justify-between w-full md:flex md-screen md:order-1"
-      id="navbar-sticky"
-      *ngIf="hiddenSm"
-    >
-      <ul
-        class="flex flex-col p-4 px-6 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white"
-      >
-        <a
-          *ngFor="let item of menuItems"
-          (click)="onMenuItemClick(item?.value)"
-          class="block py-2 px-3 text-gray-900 rounded menu-item hover:bg-[#E95B0B] hover:text-white"
-          [ngClass]="{ active: item?.value === activeItem }"
-          [href]="item.value"
-          pageScroll
-        >
-          {{ item?.label }}
-        </a>
-      </ul>
+<header class="header bg-[#fbfbfb]">
+  <div class="container max-w-screen-xl">
+    <div class="row v-center lg:flex lg:justify-between">
+      <div class="header-item item-left">
+        <div class="logo">
+          <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="../../../../assets/images/Logo FPT.png"
+              class="h-8 w-24 object-fit"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+      <!-- menu start here -->
+      <div class="header-item item-center">
+        <div class="menu-overlay" (click)="toggleMenu()"></div>
+        <nav class="menu">
+          <div class="mobile-menu-head">
+            <div class="go-back" (click)="hideSubMenu()">
+              <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="current-menu-title"></div>
+            <div class="mobile-menu-close" (click)="toggleMenu()">&times;</div>
+          </div>
+          <ul class="menu-main" (click)="subMenu($event)">
+            <!-- Home -->
+            <li>
+              <p href="#">Trang chủ</p>
+            </li>
+            <!-- Product -->
+            <li class="menu-item-has-children">
+              <p href="#">
+                Sản Phẩm <i class="fa fa-angle-down child-icon"></i>
+              </p>
+              <div
+                class="sub-menu mega-menu mega-menu-column-4 grid lg:grid-cols-3 gap-2"
+              >
+                <div
+                  class="list-item text-center border border-gray-100 rounded-lg relative max-h-40 mr-2"
+                >
+                  <div class="overlay rounded-lg"></div>
+                  <a href="#">
+                    <img
+                      src="../../../../assets/images/subm-item-1.png"
+                      class="max-h-40 object-fill"
+                    />
+                    <div class="sub-item">
+                      <button class="button-m lg:text-sm font-semibold">
+                        INTERNET FTTH
+                      </button>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="list-item text-center border border-gray-100 rounded-lg relative max-h-40 mr-2"
+                >
+                  <div class="overlay rounded-lg"></div>
+                  <a href="#">
+                    <img
+                      src="../../../../assets/images/subm-item-2.png"
+                      alt="Electronics"
+                      class="max-h-40 object-cover"
+                    />
+                  </a>
+                  <div class="sub-item">
+                    <button class="button-m lg:text-sm font-semibold">
+                      MICROSOFT
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="list-item text-center border border-gray-100 rounded-lg relative max-h-40 mr-2"
+                >
+                  <div class="overlay rounded-lg"></div>
+                  <a href="#">
+                    <img
+                      src="../../../../assets/images/subm-item-3.png"
+                      alt="Mobiles"
+                      class="max-h-40 object-cover"
+                    />
+                  </a>
+                  <div class="sub-item">
+                    <button class="button-m lg:text-sm font-semibold">
+                      e-POS
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Service -->
+            <li class="menu-item-has-children">
+              <p href="#">
+                Giải Pháp & Dịch Vụ <i class="fa fa-angle-down"></i>
+              </p>
+              <div
+                class="sub-menu mega-menu mega-menu-column-4 grid lg:grid-cols-4 gap-2"
+              >
+                <div
+                  class="list-item text-center border border-gray-100 rounded-lg relative max-h-40 mr-2"
+                >
+                  <div class="overlay rounded-lg"></div>
+                  <a href="#">
+                    <img
+                      src="../../../../assets/images/menu-reading.png"
+                      alt="Fashion"
+                      class="max-h-40 object-cover"
+                    />
+                    <button class="button-m py-1 lg:text-xl font-semibold">
+                      READING
+                    </button>
+                  </a>
+                </div>
+                <div
+                  class="list-item text-center border border-gray-100 rounded-lg relative max-h-40 mr-2"
+                >
+                  <div class="overlay rounded-lg"></div>
+                  <a href="#">
+                    <img
+                      src="../../../../assets/images/menu-listening.png"
+                      alt="Electronics"
+                      class="max-h-40 object-cover"
+                    />
+                  </a>
+                  <button class="button-m py-1 lg:text-xl font-semibold">
+                    LISTENING
+                  </button>
+                </div>
+                <div
+                  class="list-item text-center border border-gray-100 rounded-lg relative max-h-40 mr-2"
+                >
+                  <div class="overlay rounded-lg"></div>
+                  <a href="#">
+                    <img
+                      src="../../../../assets/images/menu-writing.png"
+                      alt="Mobiles"
+                      class="max-h-40 object-cover"
+                    />
+                  </a>
+                  <button class="button-m py-1 lg:text-xl font-semibold">
+                    WRITING
+                  </button>
+                </div>
+                <div
+                  class="list-item text-center border border-gray-100 rounded-lg relative max-h-40 mr-2"
+                >
+                  <div class="overlay rounded-lg"></div>
+                  <a href="#">
+                    <img
+                      src="../../../../assets/images/menu-speaking.png"
+                      alt="Appliances"
+                      class="max-h-40 object-cover"
+                    />
+                  </a>
+                  <button class="button-m py-1 lg:text-xl font-semibold">
+                    SPEAKING
+                  </button>
+                </div>
+              </div>
+            </li>
+            <!-- Customer -->
+            <li routerLink="/courses/overview">
+              <p href="#">Khách Hàng</p>
+            </li>
+            <!-- Partner -->
+            <li class="menu-item-has-children">
+              <p href="#">
+                Đối Tác <i class="fas fa-angle-down child-icon"></i>
+              </p>
+              <div class="sub-menu single-column-menu">
+                <ul>
+                  <li><a href="#">Giới thiệu</a></li>
+                  <hr />
+                  <li><a href="#">Cảm Nhận Học Viên</a></li>
+                  <hr />
+                  <li><a href="#">Questions & Answers</a></li>
+                  <hr />
+                </ul>
+              </div>
+            </li>
+            <!-- Contact -->
+            <li>
+              <p href="#">Liên Hệ</p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- menu end here -->
+      <div class="flex justify-end lg:hidden">
+        <!-- mobile menu trigger -->
+        <div class="mobile-menu-trigger" (click)="toggleMenu()">
+          <span></span>
+        </div>
+      </div>
     </div>
   </div>
-</nav>
+</header>
 <div [formGroup]="form" class="card flex justify-content-center">
   <p-dialog [(visible)]="visible" [modal]="true">
     <ng-template pTemplate="headless">

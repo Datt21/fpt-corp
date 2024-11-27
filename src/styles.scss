@@ -11,3 +11,19 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
+
+@font-face {
+    font-family: "MonaSans";
+    src: url("./assets/fonts/Mona-Sans.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "MonaSans", sans-serif !important;
+    font-size: 14px !important;
+    color: #000;
+    font-weight: 400;
+}

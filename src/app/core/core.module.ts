@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CoreComponent } from './core.component';
 import { CoreRoutingModule } from './core-routing.module';
@@ -14,12 +14,15 @@ import { PanelModule } from 'primeng/panel';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { RadioButtonModule } from 'primeng/radiobutton';
+import { SharedModule } from '../shared/shared.module';
+import { NgxParticlesModule } from '@tsparticles/angular';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 @NgModule({
   declarations: [
     CoreComponent,
     HeaderComponent,
-    FooterComponent,
     ContentComponent,
+    FooterComponent,
     PageErrorComponent,
   ],
   imports: [
@@ -34,7 +37,11 @@ import { RadioButtonModule } from 'primeng/radiobutton';
     YouTubePlayerModule,
     NgxPageScrollModule,
     RadioButtonModule,
+    SharedModule,
+    NgxParticlesModule,
+    SlickCarouselModule,
   ],
   providers: [],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class CoreModule {}

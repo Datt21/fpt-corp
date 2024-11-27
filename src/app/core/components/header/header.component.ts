@@ -8,6 +8,7 @@ import {
 import { FormBuilder, UntypedFormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import emailjs from '@emailjs/browser';
+import { MenuItem } from '../../models/menu.type';
 
 @Component({
   selector: 'app-header',
@@ -27,7 +28,10 @@ export class HeaderComponent implements OnInit {
     { label: 'Sản Phẩm', value: '#production' },
     { label: 'Liên Hệ', value: '#contact' },
   ];
-  activeItem: string | undefined;
+  itemsMenu: MenuItem[] = [];
+  activeItem: number = 0;
+  menu: HTMLElement | any;
+  subMenuElement: HTMLElement | any;
   constructor(
     private route: ActivatedRoute,
     private formBuilder: FormBuilder
@@ -43,13 +47,6 @@ export class HeaderComponent implements OnInit {
     this.hiddenMd = window.innerWidth > 768;
   }
 
-  onMenuItemClick(item: string) {
-    this.activeItem = item;
-    setTimeout(() => {
-      this.hiddenSm = !this.hiddenSm;
-    }, 2000);
-  }
-
   createFrorm() {
     this.form = this.formBuilder.group({
       name: [''],
@@ -58,16 +55,55 @@ export class HeaderComponent implements OnInit {
     });
   }
 
-  toggleMenu() {
-    this.hiddenSm = !this.hiddenSm;
-  }
-
   showDialog() {
     this.visible = true;
   }
 
   closeDialog() {
     this.visible = false;
+  }
+
+  // menu responsive
+  toggleMenu() {
+    this.menu = document.querySelector('.menu') as HTMLElement;
+    this.menu.classList.toggle('active');
+    document.querySelector('.menu-overlay')?.classList.toggle('active');
+  }
+
+  subMenu(event: any) {
+    const menu = document.querySelector('.menu');
+    if (!menu?.classList.contains('active')) {
+      return;
+    }
+    if (event.target.closest('.menu-item-has-children')) {
+      const hasChildren = event.target.closest('.menu-item-has-children');
+      this.showSubMenu(hasChildren);
+    }
+  }
+
+  showSubMenu(hasChildren: any) {
+    const menu = document.querySelector('.menu');
+    this.subMenuElement = hasChildren.querySelector('.sub-menu');
+    this.subMenuElement.classList.add('active');
+    this.subMenuElement.style.animation = 'slideLeft 0.5s ease forwards';
+    menu?.querySelector('.mobile-menu-head')?.classList.add('active');
+    const menuTitle = hasChildren.querySelector('p').childNodes[0].textContent;
+    if (menu && menu.querySelector('.current-menu-title')) {
+      (menu.querySelector('.current-menu-title') as HTMLElement).innerHTML =
+        menuTitle;
+    }
+  }
+
+  hideSubMenu() {
+    const menu = document.querySelector('.menu');
+    this.subMenuElement.style.animation = 'slideRight 0.5s ease forwards';
+    setTimeout(() => {
+      this.subMenuElement.classList.remove('active');
+    }, 300);
+    if (menu && menu.querySelector('.current-menu-title')) {
+      (menu.querySelector('.current-menu-title') as HTMLElement).innerHTML = '';
+    }
+    menu?.querySelector('.mobile-menu-head')?.classList.remove('active');
   }
 
   async submitForm() {
