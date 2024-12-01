@@ -32,6 +32,7 @@ export class HeaderComponent implements OnInit {
   activeItem: number = 0;
   menu: HTMLElement | any;
   subMenuElement: HTMLElement | any;
+  assetPrefix: string = '/fpt-corp-page/';
   constructor(
     private route: ActivatedRoute,
     private formBuilder: FormBuilder

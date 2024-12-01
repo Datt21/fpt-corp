@@ -26,6 +26,7 @@ export class ContentComponent implements OnInit {
   slickOptions: any;
   slides: any[] = [];
   partners: any[] = [];
+  assetPrefix: string = '/fpt-corp-page/';
   constructor(private readonly ngParticlesService: NgParticlesService) {
     this.options = particlesOptions;
     this.products = PRODUCTS;
