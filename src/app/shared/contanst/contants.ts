@@ -75,28 +75,28 @@ export const particlesOptions = {
 
 export const PRODUCTS = [
   {
-    imageUrl: '../../../../assets/images/product1.jpg',
+    imageUrl: '../../../../assets/images/banner1.jpg',
     title: 'Internet FTTH',
     description: 'Short description for the first card',
     buttonText: 'Tìm hiểu thêm',
     colorText: 'white',
   },
   {
-    imageUrl: '../../../../assets/images/product2.jpg',
+    imageUrl: '../../../../assets/images/banner2.jpg',
     title: 'Giải Pháp Giám Sát An Ninh',
     description: 'Short description for the second card',
     buttonText: 'Tìm hiểu thêm',
     colorText: 'gray-900',
   },
   {
-    imageUrl: '../../../../assets/images/product5.jpg',
+    imageUrl: '../../../../assets/images/banner3.png',
     title: 'Tổng Đài Số',
     description: 'Short description for the third card',
     buttonText: 'Tìm hiểu thêm',
     colorText: 'gray-900',
   },
   {
-    imageUrl: '../../../../assets/images/product4.jpg',
+    imageUrl: '../../../../assets/images/banner4.jpg',
     title: 'IT Services',
     description: 'Short description for the fourth card',
     buttonText: 'Tìm hiểu thêm',
@@ -109,19 +109,19 @@ export const REASONS = [
     icon: '../../../../assets/images/icons8-earth-care.png',
     title: 'Chăm sóc khách hàng chuẩn mực và chuyên biệt',
     description:
-      'Intuitive interface that helps you find what you need quickly and effortlessly.',
+      'Hỗ trợ tùy biến và riêng biệt cho từng lĩnh vực của doanh nghiệp',
   },
   {
     icon: '../../../../assets/images/icons8-standard.png',
-    title: 'Các sản phẩm và dịch vụ tuân theo và đạt chuẩn quốc tế',
+    title: 'Các sản phẩm và dịch vụ đạt chuẩn quốc tế',
     description:
-      'SFC is a defining feature of Vue and is the recommended way to author Vue components if your use case warrants a build setup',
+      'Cung cấp dịch vụ chất lượng cao, cam kết tuân thủ tiêu chuẩn quốc tế',
   },
   {
     icon: '../../../../assets/images/icons8-server.png',
     title: 'Tích hợp các gói dịch vụ chi phí hợp lí',
     description:
-      'You can learn more about the how and why of SFC in its dedicated section - but for now, just know that Vue will handle all the build tools setup for you.',
+      'Các gói dịch vụ được thiết kế linh hoạt và chi phi hợp lý cho từng nhu cầu',
   },
 ];
 
@@ -147,46 +147,32 @@ export const NEWS = [
     description:
       'Lightning-quick responses and smooth user experience across all devices.Despite the flexibility, the core knowledge about how Vue works is shared across all these use cases. ',
   },
-  {
-    img: '../../../../assets/images/news-1.jpg',
-    type: 'Tin tức',
-    title: 'Easy Navigation',
-    description:
-      'Intuitive interface that helps you find what you need quickly and effortlessly.',
-  },
-  {
-    img: '../../../../assets/images/news-2.jpg',
-    type: 'Dịch vụ',
-    title: 'Precise Targeting',
-    description:
-      'Advanced algorithms to pinpoint exactly what matters most to you.',
-  },
 ];
 
 export const SLIDES = [
   {
     id: 1,
-    image: '../../../../assets/images/slide-1.jpg',
+    image: '../../../../assets/images/customer1.jpg',
   },
   {
     id: 2,
-    image: '../../../../assets/images/slide-2.jpg',
+    image: '../../../../assets/images/customer2.png',
   },
   {
     id: 3,
-    image: '../../../../assets/images/slide-3.jpg',
+    image: '../../../../assets/images/customer3.jpg',
   },
   {
     id: 1,
-    image: '../../../../assets/images/slide-1.jpg',
+    image: '../../../../assets/images/customer1.jpg',
   },
   {
     id: 2,
-    image: '../../../../assets/images/slide-2.jpg',
+    image: '../../../../assets/images/customer2.png',
   },
   {
     id: 3,
-    image: '../../../../assets/images/slide-3.jpg',
+    image: '../../../../assets/images/customer3.jpg',
   },
 ];
 
