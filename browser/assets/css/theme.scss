@@ -1,0 +1,78 @@
+@import "../../variables.scss";
+@import "../css/setting_font.scss";
+
+$i: 5;
+@while $i<=50 {
+    .fs-px-#{$i} {
+        font-size: #{$i}px !important;
+    }
+    $i: $i + 1;
+}
+
+$i: 1;
+@while $i<=1000 {
+    .h-#{$i}px {
+        height: #{$i}px !important;
+    }
+    $i: $i + 1;
+}
+
+$i: 1;
+@while $i<=2000 {
+    .w-#{$i}px {
+        width: #{$i}px !important;
+    }
+    $i: $i + 1;
+}
+
+$i: 1;
+@while $i<=200 {
+    .w-#{$i}pc {
+        width: #{$i + "%"} !important;
+    }
+    $i: $i + 1;
+}
+
+$i: 1;
+@while $i<=200 {
+    .h-#{$i}pc {
+        height: #{$i + "%"} !important;
+    }
+    $i: $i + 1;
+}
+
+.font-w6 {
+    color: #000000;
+    font-weight: bold !important;
+}
+
+.font-w8 {
+    color: #000000;
+    font-weight: 800 !important;
+}
+
+.font-w8-red {
+    color: #ff0000;
+    font-weight: 800 !important;
+}
+
+.font-w3 {
+    color: #000000;
+}
+
+.font-w0 {
+    color: #000000;
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+.bolder {
+    font-weight: 900 !important;
+}
+
+.ps__rail-y,
+.ps__rail-x {
+    z-index: 1000;
+}
