@@ -46,7 +46,5 @@ export class ContentComponent implements OnInit {
     console.log(container);
   }
 
-  slickInit(e: any) {
-    console.log('slick initialized');
-  }
+  slickInit(e: any) {}
 }
