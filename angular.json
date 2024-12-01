@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "fpt-smart-home": {
+    "fpt-corp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/fpt-smart-home",
+            "outputPath": "dist/fpt-corp",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "fpt-smart-home:build:production"
+              "buildTarget": "fpt-corp:build:production"
             },
             "development": {
-              "buildTarget": "fpt-smart-home:build:development"
+              "buildTarget": "fpt-corp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "fpt-smart-home:build"
+            "buildTarget": "fpt-corp:build"
           }
         },
         "test": {
