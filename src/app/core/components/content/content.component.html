@@ -57,7 +57,7 @@
     >
       <div class="relative">
         <img
-          [src]="assetPrefix + item.imageUrl"
+          [src]="item.imageUrl"
           alt="Card Image"
           class="w-full h-[80vh] md:h-[60vh] object-cover"
         />
@@ -101,7 +101,7 @@
       >
         <div class="mb-4 flex items-center justify-center h-[20vh]">
           <img
-            [src]="assetPrefix + item?.icon"
+            [src]="item?.icon"
             alt=""
             class="max-w-full max-h-full object-contain"
           />
@@ -135,7 +135,7 @@
     class="carousel"
   >
     <div ngxSlickItem *ngFor="let item of slides" class="slide-item">
-      <img [src]="assetPrefix + item.image" alt="" class="h-[40vh] w-full object-cover" />
+      <img [src]="item.image" alt="" class="h-[40vh] w-full object-cover" />
     </div>
   </ngx-slick-carousel>
 </section>
@@ -149,7 +149,7 @@
   <div class="w-full grid grid-cols-2 gap-4 p-4 rounded-[16px]">
     <div class="col-span-1">
       <img
-        src="{{assetPrefix}}../../../../assets/images/img-article-master.png"
+        src="assets/images/img-article-master.png"
         alt=""
         class="rounded-[20px] h-[50vh] w-full object-cover"
       />
@@ -179,7 +179,7 @@
       <div *ngFor="let item of news" class="grid grid-cols-2 gap-4">
         <div class="mb-4">
           <img
-            [src]="assetPrefix + item?.img"
+            [src]="item?.img"
             alt=""
             class="w-full h-[24vh] rounded-[16px] object-cover"
           />
